@@ -14,5 +14,5 @@ while x > 0:
 print(minimum, '\n', maximum, sep="")
 
 # Альтернатива (not mine):
-s = sorted(input())
-print(s[0], s[-1], sep = '\n')
+# s = sorted(input())
+# print(s[0], s[-1], sep = '\n')
