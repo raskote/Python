@@ -13,3 +13,11 @@ while a <= b:
     a += 1
 
 
+# Альтернатива (not mine)
+# a, b = int(input()), int(input())
+# while a <= b:
+#     if a % 777 == 0:
+#         break
+#     elif a % 2 != 0 and a % 3 != 0:
+#         print(a)
+#     a += 1
