@@ -1,21 +1,23 @@
 # Задача:
-# https://i.gyazo.com/fbce0857ab086f59186276dbc90b22d0.png
+# https://i.gyazo.com/a8af4e5bcbe1e2d2c46ab2991cbde805.png
 
 # Решение:
 n = input()
-chet = []
-nechet = []
-for i in range(0, len(n), 2):
-    nechet.append(n[i])
-    nechet = list(map(int, nechet))
-for i in range(1, len(n), 2):
-    chet.append(n[i])
-    chet = list(map(int, chet))
-if abs(sum(nechet)-sum(chet))%11==0:
-    print("YES")
-else:
-    print("NO")
+count = 0
+sum = 0
+for i in range(1, len(n)):
+    if n[i].isdigit():
+        count += 1
+        sum += int(n[i])
+print(count, sum)
 
-# Альтернатива (not mine)
-# n = [int(i) for i in input()]
-# print('NO' if (sum(n[1::2]) - sum(n[0::2])) % 11 else 'YES')
+# Альтернатива_1 (not mine)
+a = [int(i) for i in input() if i.isdigit()]
+print(len(a), sum(a))
+
+# Альтернатива_2 (not mine)
+s, n = list(input()), []
+for i in s:
+    if i.isdigit():
+         n.append(int(i))
+print(len(n), sum(n))
