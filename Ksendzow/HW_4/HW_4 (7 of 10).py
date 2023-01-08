@@ -18,4 +18,13 @@ while l1:
 if count == check:
     print("l1 является подмножеством l2")
 else:
-    print("l1 не является подмножеством l2")
+#     print("l1 не является подмножеством l2")
+
+# Альтернатива (not mine)
+# l1 = [1, 4, 6]
+# l2 = [9, 5, 1, 10, 4, 33, 2, 6, 0, 8]
+# count = 0
+# for i in l1:
+#     if i in l2:
+#         count += 1
+# print(count == len(l1))
