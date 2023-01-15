@@ -8,3 +8,9 @@
 # no_duplicate_letters("Всегда дожимай до конца") ➞ True
 # Две в в «Здравствуйте», три a в «Александра».
 
+#Решение (not mine):
+def foo(string):
+        return len(set(string)) == len(string)
+
+print(foo('test'))
+print(foo('tes'))

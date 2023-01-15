@@ -12,9 +12,48 @@
 #
 # Типы символов, которые будут содержаться в пароле во время тестирования:
 
-# numbers = "0123456789"
-# lower_case = "abcdefghijklmnopqrstuvwxyz"
-# upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-# special_characters = "!@#$%^&*()-+"
+
 
 # Пароль не должен содержать кириллических символов
+x = input()
+count = 0
+count2 = 0
+count3 = 0
+count4 = 0
+count5 = 0
+numbers = "0123456789"
+lower_case = "abcdefghijklmnopqrstuvwxyz"
+upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+special_characters = "!@#$%^&*()-+"
+# длина пароля не меньше 6 символов,
+if len(x) >= 6:
+    count += 1
+# пароль содержит хотя бы 1 цифру,
+for i in numbers:
+    for j in x:
+        if j == i:
+            count2 += 1
+# пароль содержит хотя бы одну заглавную букву,,
+for i in upper_case:
+    for j in x:
+        if j == i:
+            count3 += 1
+# пароль содержит хотя бы одну строчную букву,,
+for i in lower_case:
+    for j in x:
+        if j == i:
+            count4 += 1
+# пароль содержит хотя бы один из специальных символов,
+for i in special_characters:
+    for j in x:
+        if j == i:
+            count5 += 1
+if count2:
+    count += 1
+if count3:
+    count +=1
+if count4:
+    count += 1
+if count5:
+    count += 1
+print(count)
