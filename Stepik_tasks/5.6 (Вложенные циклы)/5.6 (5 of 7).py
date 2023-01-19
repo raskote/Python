@@ -6,10 +6,15 @@
 
 # Решение:
 n = int(input())
-s = []
-for i in s:
-    if s[i] > s[i+1]:
-        s[i]
+l = list(map(int, input().split()))
+count = 0
+for i in range(n-1):
+    for j in range(n-i-1):
+        if l[j] > l[j+1]:
+            l[j], l[j+1] = l[j+1], l[j]
+            count += 1
+print(*l)
+print(count)
 
 # Альтернатива_1 (not mine):
 
