@@ -1,19 +1,8 @@
-# # объявление функции
-# def merge(list1, list2):
-#     list = []
-#     list.extend(numbers1)
-#     list.extend(numbers2)
-#     return sorted(list)
-#
-#
-# # считываем данные
-# numbers1 = [int(c) for c in input().split()]
-# numbers2 = [int(c) for c in input().split()]
-#
-# # вызываем функцию
-# print(merge(numbers1, numbers2))
-#
+# Задача:
+# https://i.gyazo.com/928649b17cbf0c9c303f2ed310aac914.png
 
+# Решение:
+# Функция
 def quick_merge(list1, list2):
     result = []
 
@@ -34,3 +23,10 @@ def quick_merge(list1, list2):
         result += list2[p2:]
 
     return result
+
+# Считываем данные
+total_li = []
+for i in range(int(input())):
+    num = [int(q) for q in input().split()]
+    total_li = quick_merge(total_li, num)
+print(*total_li)
