@@ -4,6 +4,6 @@
 # Решение:
 n = int(input())
 for i in range(1, n):
-    print(i, end="\n")
-    for j in range(1, n):
+    print(i, end=" ")
+    for j in range(n):
         print(j, end= " ")
