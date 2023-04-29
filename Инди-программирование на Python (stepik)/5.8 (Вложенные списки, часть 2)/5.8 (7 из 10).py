@@ -4,24 +4,21 @@
 # Решение:
 n, m = map(int, input().split())
 li = []
-count = 0
+start, first = 0, m
 for i in range(n):
-    row = [i for i in range(m)]
-    # for j in range(n):
-    #     row.append()
+    row = [i for i in range(start, m)]
     li.append(row)
-print(li)
-
+    start, m = m, m+first
 for i in range(n):
     if i % 2 != 0:
         print(*li[i][::-1])
     else:
         print(*li[i])
 
-
-
+# Альтернатива (not mine)
+# n, m = map(int, input().split())
 # for i in range(n):
-#     row = []
-#     for j in range(n):
-#         row.append(a)
-#     li.append(row)
+#     if i % 2 == 0:
+#         print(*list(range(i * m, i * m + m)))
+#     else:
+#         print(*list(range(i * m, i * m + m))[::-1])
