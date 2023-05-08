@@ -1,3 +1,7 @@
+# Задача:
+# https://i.gyazo.com/4671b4560475ccbe3d932a0d7908f181.png
+
+# Решение:
 currencies = {
     'Argentine Peso': 118362.205708,
     'Australian Dollar': 1586.232315,
