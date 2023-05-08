@@ -1,3 +1,7 @@
+# Задача:
+# https://i.gyazo.com/74d19b37f1c10b2389daaac0d44421d8.png
+
+# Решение:
 address = {
   "id": 7973,
   "uid": "42f2ce1d-90ab-4345-9595-0d9f42e6c085",
