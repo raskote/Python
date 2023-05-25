@@ -60,5 +60,7 @@ data = {
 
 # все необходимые данные уже лежат в словаре data, обращайтесь к нему
 
-from pprint import pprint
-pprint(data)
+li = []
+for i in range(len(data["my_friends"]["people"])):
+    li.append(data["my_friends"]["people"][i]["first_name"])
+print(*sorted(li), sep = "\n")
